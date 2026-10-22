@@ -82,42 +82,42 @@ if st.button("Высчитать", type="primary"):
     c1, c2, c3 = st.columns(3)
     c1.metric("База (1)", baza1, carte(baza1))
     c2.metric("Школа (2)", shkola2, carte(shkola2))
-    c3.metric("Екзамен (3)", ekzamen3)
+    c3.metric("Екзамен (3)", ekzamen3, carte(ekzamen3))
 
     c4, c5, c6 = st.columns(3)
-    c4.metric("Комплекси (4)", kompleksy4)
-    c5.metric("Мислення (5)", myslennya5)
-    c6.metric("Сверхдар (6)", sverhdar6)
+    c4.metric("Комплекси (4)", kompleksy4, catre(kompleksy4))
+    c5.metric("Мислення (5)", myslennya5, carte(myslennya5))
+    c6.metric("Сверхдар (6)", sverhdar6, carte(sverhdar6))
 
     # Section 2: Shadow
     st.subheader("🕳️ Тень")
     cA, cB, cC = st.columns(3)
-    cA.metric("Детство (А)", detstvoA)
-    cB.metric("Травма (B)", travmaB)
-    cC.metric("Портрет души в самовыражении (C)", portret_dushiC)
+    cA.metric("Детство (А)", detstvoA, carte(detstvoA))
+    cB.metric("Травма (B)", travmaB, carte(travmaB))
+    cC.metric("Портрет души в самовыражении (C)", portret_dushiC, carte(portret_dushiC))
 
     cD, cE, cF = st.columns(3)
-    cD.metric("Афект (D)", affektD)
-    cE.metric("Препятствие (E)", prepyatstvieE)
-    cF.metric("Сила на экзамене (F)", syla_ekzamenF)
+    cD.metric("Афект (D)", affektD, carte(affektD))
+    cE.metric("Препятствие (E)", prepyatstvieE, carte(prepyatstvieE))
+    cF.metric("Сила на экзамене (F)", syla_ekzamenF, carte(syla_ekzamenF))
     
     # Section 3 : Destinée et Karmi
     st.subheader("🌟 Карма")
     col_a, col_b = st.columns(2)
 
     with col_a:
-        st.write(f"**Предназначение (7) :** {prednaznachenyie7}")
-        st.write(f"**Что в этом поможет (8) :** {chto_pomozhet8}")
-        st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}")
-        st.write(f"**Самый большой страх (10) :** {strah10}")
+        st.write(f"**Предназначение (7) :** {prednaznachenyie7}, {carte(prednaznacheniye7)}")
+        st.write(f"**Что в этом поможет (8) :** {chto_pomozhet8}, {carte(chto_pomozhet8)}")
+        st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}, {carte(proshlaya_zhyzn9)}")
+        st.write(f"**Самый большой страх (10) :** {strah10}, {carte(strah10)}")
 
     with col_b:
-        st.write(f"**Кармическая задача (11) :** {zadacha11}")
-        st.write(f"**Психологический комфорт (12) :** {komfort12}")
-        st.write(f"**Что поможет в задаче (15) :** {chto_pomozhet15}")
+        st.write(f"**Кармическая задача (11) :** {zadacha11}, {carte(zadacha11)}")
+        st.write(f"**Психологический комфорт (12) :** {komfort12}, {carte(komfort12)}")
+        st.write(f"**Что поможет в задаче (15) :** {chto_pomozhet15}, {carte(chto_pomozhet15})")
 
     # Section 3 : Perception
     st.subheader("👁️ Восприятие")
     p1, p2 = st.columns(2)
-    p1.info(f"**Как я вижу себя (13) :** {kak_sebyia13}")
-    p2.success(f"**Как меня видят другие (14) :** {kak_drugie14}")
+    p1.info(f"**Как я вижу себя (13) :** {kak_sebyia13}, {carte(kak_sebyia13)}")
+    p2.success(f"**Как меня видят другие (14) :** {kak_drugie14}, {carte(kak_drugie14)}")
