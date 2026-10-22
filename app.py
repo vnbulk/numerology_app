@@ -114,7 +114,7 @@ if st.button("Высчитать", type="primary"):
     with col_b:
         st.write(f"**Кармическая задача (11) :** {zadacha11}, {carte(zadacha11)}")
         st.write(f"**Психологический комфорт (12) :** {komfort12}, {carte(komfort12)}")
-        st.write(f"**Что поможет в задаче (15) :** {chto_pomozhet15}, {carte(chto_pomozhet15})")
+        st.write(f"**Что поможет в задаче (15) :** {chto_pomozhet15}, {carte(chto_pomozhet15)}")
 
     # Section 3 : Perception
     st.subheader("👁️ Восприятие")
