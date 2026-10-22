@@ -62,7 +62,7 @@ if st.button("Высчитать", type="primary"):
     kak_sebyia13 = simp(baza1 + kompleksy4 + sverhdar6)
     kak_drugie14 = simp(ekzamen3 + myslennya5 + sverhdar6)
     chto_pomozhet15 = simp(
-        (proshlaya_zhyzn9[2] + strah10 + zadacha11) - prednaznachenyie7
+        (proshlaya_zhyzn9[0] + strah10 + zadacha11) - prednaznachenyie7
     )
 
     st.markdown("---")
