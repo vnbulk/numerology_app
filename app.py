@@ -106,7 +106,7 @@ if st.button("Высчитать", type="primary"):
     col_a, col_b = st.columns(2)
 
     with col_a:
-        st.write(f"**Предназначение (7) :** {prednaznachenyie7}, {carte(prednaznacheniye7)}")
+        st.write(f"**Предназначение (7) :** {prednaznachenyie7}, {carte(prednaznachenyie7)}")
         st.write(f"**Что в этом поможет (8) :** {chto_pomozhet8}, {carte(chto_pomozhet8)}")
         st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}, {carte(proshlaya_zhyzn9)}")
         st.write(f"**Самый большой страх (10) :** {strah10}, {carte(strah10)}")
