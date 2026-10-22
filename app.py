@@ -64,9 +64,16 @@ if st.button("Высчитать", type="primary"):
     chto_pomozhet15 = simp(
         (proshlaya_zhyzn9[0] + strah10 + zadacha11) - prednaznachenyie7
     )
-
+    
+    detstvoA = simp(baza1 + kompleksy4)
+    travmaB = simp(shkola2 + kompleksy4)
+    portret_dushiC = simp(shkola2 + myslennya5)
+    affektD = simp(ekzamen3 + myslennya5)
+    prepyatstvieE = simp(kompleksy4 + sverhdar6)
+    syla_ekzamenF = simp(myslennya5 + sverhdar6)
+    
     st.markdown("---")
-
+    
     # Section 1 : Bases
     st.subheader("📌 Главные арканы")
     c1, c2, c3 = st.columns(3)
@@ -79,7 +86,19 @@ if st.button("Высчитать", type="primary"):
     c5.metric("Мислення (5)", myslennya5)
     c6.metric("Сверхдар (6)", sverhdar6)
 
-    # Section 2 : Destinée et Karmi
+    # Section 2: Shadow
+    st.subheader("🕳️ Тень")
+    cA, cB, cC = st.columns(3)
+    cA.metric("Детство (А)", detstvoA)
+    cB.metric("Травма (B)", travmaB)
+    cC.metric("Портрет души в самовыражении (C)", portret_dushiC)
+
+    cD, cE, cF = st.columns(3)
+    cD.metric("Афект (D)", affectD)
+    cE.metric("Препятствие (E)", prepyatstvieE)
+    cF.metric("Сила на экзамене (F)", syla_ekzamenF)
+    
+    # Section 3 : Destinée et Karmi
     st.subheader("🌟 Карма")
     col_a, col_b = st.columns(2)
 
