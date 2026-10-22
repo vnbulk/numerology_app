@@ -24,7 +24,10 @@ def somme_chiffres(n):
     if somme >= 23:
         somme -= 22
     return somme
-
+    
+def carte(n):
+    L = ["Шут", "Маг", "Верхоаная жрица", "Императрица", "Император", "Иерофант", "Влюбленные", "Колесница", "Сила", "Отшельник", "Колесо фортуны", "Справедливость", "Повешнный", "Смерть", "Умеренность", "Дьявол", "Башня", "Звезды", "Луна", "Солнце", "Суд", "Мир", "Шут"]
+    return L[n]
 
 # Interface utilisateur Streamlit
 st.title("🔮 Архетип")
@@ -77,8 +80,8 @@ if st.button("Высчитать", type="primary"):
     # Section 1 : Bases
     st.subheader("📌 Главные арканы")
     c1, c2, c3 = st.columns(3)
-    c1.metric("База (1)", baza1)
-    c2.metric("Школа (2)", shkola2)
+    c1.metric("База (1)", baza1, carte(baza1)
+    c2.metric("Школа (2)", shkola2, carte(shkola2))
     c3.metric("Екзамен (3)", ekzamen3)
 
     c4, c5, c6 = st.columns(3)
