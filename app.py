@@ -94,7 +94,7 @@ if st.button("Высчитать", type="primary"):
     cC.metric("Портрет души в самовыражении (C)", portret_dushiC)
 
     cD, cE, cF = st.columns(3)
-    cD.metric("Афект (D)", affectD)
+    cD.metric("Афект (D)", affektD)
     cE.metric("Препятствие (E)", prepyatstvieE)
     cF.metric("Сила на экзамене (F)", syla_ekzamenF)
     
