@@ -80,7 +80,7 @@ if st.button("Высчитать", type="primary"):
     # Section 1 : Bases
     st.subheader("📌 Главные арканы")
     c1, c2, c3 = st.columns(3)
-    c1.metric("База (1)", baza1, carte(baza1)
+    c1.metric("База (1)", baza1, carte(baza1))
     c2.metric("Школа (2)", shkola2, carte(shkola2))
     c3.metric("Екзамен (3)", ekzamen3)
 
