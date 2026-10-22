@@ -85,7 +85,7 @@ if st.button("Высчитать", type="primary"):
     c3.metric("Екзамен (3)", ekzamen3, carte(ekzamen3))
 
     c4, c5, c6 = st.columns(3)
-    c4.metric("Комплекси (4)", kompleksy4, catre(kompleksy4))
+    c4.metric("Комплекси (4)", kompleksy4, carte(kompleksy4))
     c5.metric("Мислення (5)", myslennya5, carte(myslennya5))
     c6.metric("Сверхдар (6)", sverhdar6, carte(sverhdar6))
 
