@@ -26,7 +26,7 @@ def somme_chiffres(n):
     return somme
     
 def carte(i):
-    L = ["Шут", "Маг", "Верхоаная жрица", "Императрица", "Император", "Иерофант", "Влюбленные", "Колесница", "Сила", "Отшельник", "Колесо фортуны", "Справедливость", "Повешнный", "Смерть", "Умеренность", "Дьявол", "Башня", "Звезды", "Луна", "Солнце", "Суд", "Мир", "Шут"]
+    L = ["Шут", "Маг", "Верховная жрица", "Императрица", "Император", "Иерофант", "Влюбленные", "Колесница", "Сила", "Отшельник", "Колесо фортуны", "Справедливость", "Повешнный", "Смерть", "Умеренность", "Дьявол", "Башня", "Звезда", "Луна", "Солнце", "Суд", "Мир", "Шут"]
     return L[i]
 
 # Interface utilisateur Streamlit
@@ -94,7 +94,7 @@ if st.button("Высчитать", type="primary"):
     cA, cB, cC = st.columns(3)
     cA.metric("Детство (А)", detstvoA, carte(detstvoA))
     cB.metric("Травма (B)", travmaB, carte(travmaB))
-    cC.metric("Портрет души в самовыражении (C)", portret_dushiC, carte(portret_dushiC))
+    cC.metric("Потребность души в самовыражении (C)", portret_dushiC, carte(portret_dushiC))
 
     cD, cE, cF = st.columns(3)
     cD.metric("Афект (D)", affektD, carte(affektD))
@@ -108,7 +108,7 @@ if st.button("Высчитать", type="primary"):
     with col_a:
         st.write(f"**Предназначение (7) :** {prednaznachenyie7}, {carte(prednaznachenyie7)}")
         st.write(f"**Что в этом поможет (8) :** {chto_pomozhet8}, {carte(chto_pomozhet8)}")
-        st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}, {carte(proshlaya_zhyzn9[0])}")
+        st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}, {carte(proshlaya_zhyzn9[0]), carte(proshlaya_zhyzn9[1]), carte(proshlaya_zhyzn9[2])}")
         st.write(f"**Самый большой страх (10) :** {strah10}, {carte(strah10)}")
 
     with col_b:
