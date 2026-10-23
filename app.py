@@ -108,7 +108,7 @@ if st.button("Высчитать", type="primary"):
     with col_a:
         st.write(f"**Предназначение (7) :** {prednaznachenyie7}, {carte(prednaznachenyie7)}")
         st.write(f"**Что в этом поможет (8) :** {chto_pomozhet8}, {carte(chto_pomozhet8)}")
-        st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}, {carte(proshlaya_zhyzn9[0]), carte(proshlaya_zhyzn9[1]), carte(proshlaya_zhyzn9[2])}")
+        st.write(f"**Прошлая жизнь (9) :** {proshlaya_zhyzn9}, {carte(proshlaya_zhyzn9[0])}, {carte(proshlaya_zhyzn9[1])}, {carte(proshlaya_zhyzn9[2])}")
         st.write(f"**Самый большой страх (10) :** {strah10}, {carte(strah10)}")
 
     with col_b:
